@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script>
+        function onLogin(event){
+            event.preventDefault();
+            window.location = "home.html"
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <img  src="./assets/img/icon.png" alt="icon">
+            <div class="please">Please login with your account</div>
+        </div>
+        <div class="switch">
+            <button class="btn satu">Customer</button><button class="btn dua">Seller</button>
+        </div>
+        <form method="POST" onsubmit="onLogin(event)" class="form">
+            <div class="input">
+                <input  type="email" placeholder="Email">
+            </div>
+            <div class="input first">
+                <input  type="password" placeholder="Password"></li>
+            </div>
+            <div class="forgot">
+                <a href="login.html">Forgot Password</a>
+            </div>
+            <button class="btn" onclick="">Login</button>
+        </form>
+        <div class="register">
+             Don't have Blanja Account ?<a href="signup.html">Register</a>
+        </div>
+    </div>
+</body>
+</html>
